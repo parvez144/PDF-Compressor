@@ -1,0 +1,6 @@
+pyinstaller==6.13.0
+
+# System Dependencies:
+# Ghostscript (gs) is required for PDF compression
+# Download from: https://www.ghostscript.com/releases/gsdnld.html
+# Required files: gswin64c.exe and gsdll64.dll in the 'gs/bin' folder 
