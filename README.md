@@ -1,60 +1,109 @@
 # PDF Compressor
 
-A professional desktop application to compress PDF files while maintaining reasonable quality. Developed by Shahriar Parvez.
+A user-friendly desktop application for compressing PDF files while maintaining reasonable quality. Built with Python and Tkinter.
 
 ## Features
-- Easy-to-use graphical interface
-- Select PDF files through a file browser
-- Compress PDFs while maintaining readability
-- Supports most PDF file formats
-- Professional installer with proper Windows integration
-- Desktop and Start Menu shortcuts
-- Proper uninstaller
-- No file size limitations
-- Custom application icon
+
+- Simple and intuitive graphical user interface
+- Multiple compression quality options:
+  - Screen (Maximum compression, ~60-90% reduction)
+  - Ebook (Good compression, ~50-80% reduction)
+  - Printer (Medium compression, ~30-50% reduction)
+  - Prepress (High quality, ~10-30% reduction)
+- Automatic file naming to prevent overwriting existing files
+- Real-time compression progress indicator
+- Detailed compression results showing original and final sizes
+
+## Requirements
+
+- Windows Operating System
+- Python 3.6 or higher
+- Ghostscript (included in the release package)
+- Required Python packages:
+  ```
+  tkinter (usually comes with Python)
+  ```
 
 ## Installation
-1. Download the `PDF_Compressor_Setup.exe` installer
-2. Run the installer and follow the on-screen instructions
-3. Choose whether to create a desktop shortcut
-4. The application will be installed in your Program Files directory
+
+### Method 1: Using the Executable (Recommended)
+1. Download the latest release from the [Releases](https://github.com/yourusername/PDF-Compressor/releases) page
+2. Extract the ZIP file
+3. Run `PDF-Compressor.exe`
+
+### Method 2: From Source
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/PDF-Compressor.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd PDF-Compressor
+   ```
+3. Install Ghostscript:
+   - Download from [Ghostscript official website](https://www.ghostscript.com/releases/gsdnld.html)
+   - Install and ensure it's in your system PATH, or
+   - Place the required files (`gswin64c.exe` and `gsdll64.dll`) in the `gs/bin` folder
+
+4. Run the application:
+   ```bash
+   python pdf_compressor.py
+   ```
 
 ## Usage
-1. Launch the application from the Start Menu or desktop shortcut
-2. Click the "Select File" button to choose a PDF file
+
+1. Launch the application
+2. Click "Browse" to select your PDF file
 3. Choose your desired compression quality:
-   - Screen (maximum compression)
-   - Ebook (good compression)
-   - Printer (medium compression)
-   - Prepress (high quality)
+   - Screen: Best for viewing on screen, highest compression
+   - Ebook: Good for e-readers, balanced compression
+   - Printer: Suitable for regular printing
+   - Prepress: High quality, minimal compression
 4. Click "Compress PDF"
-5. The compressed file will be saved in the same location as the original file with "_compressed" added to the filename
+5. Wait for the compression to complete
+6. The compressed file will be saved with "_compressed" suffix in the same directory
 
-## System Requirements
-- Windows 10 or later
-- No additional software required - all necessary components are included
-- Administrator rights are not required for installation
+## File Naming Convention
 
-## Antivirus Information
-This application may trigger antivirus warnings because it bundles all necessary components into a single executable. This is a common false positive with PyInstaller-created applications. The application is completely safe to use and does not contain any malicious code.
+- Compressed files are automatically named with the suffix "_compressed"
+- If a file with the same name exists, a number is added (e.g., `document_compressed_1.pdf`)
 
-If you receive an antivirus warning:
-1. You can safely add the application to your antivirus exclusion list
-2. The source code is available for review if needed
-3. The application has been built with proper version information and metadata
+## Troubleshooting
 
-## Notes
-- The original PDF file will not be modified
-- The compressed version will be saved as a new file
-- Compression ratio may vary depending on the content of the PDF
-- For best results, use PDFs with text and images
-- The application includes Ghostscript for PDF processing
+### Common Issues:
 
-## Support
-For any issues or questions, please contact:
-- Developer: Shahriar Parvez
-- Version: 1.0.0
-- Copyright © 2024
+1. **"Ghostscript files not found" error**
+   - Ensure Ghostscript is properly installed
+   - Check if `gswin64c.exe` and `gsdll64.dll` are present in the `gs/bin` folder
+
+2. **Application won't start**
+   - Verify Python is installed correctly
+   - Ensure all dependencies are met
+   - Check if you have sufficient permissions
+
+3. **Compression fails**
+   - Verify the input PDF is not corrupted
+   - Ensure you have write permissions in the output directory
+   - Check if the PDF is not password-protected
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Built using [Ghostscript](https://www.ghostscript.com/) for PDF compression
+- Icon and UI design by SPK
+
+## Author
+
+SPK - [GitHub Profile] (https://github.com/parvez144)
+
+---
 
 ## For Developers: Building the Application
 
