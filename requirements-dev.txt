@@ -1,0 +1,10 @@
+# Development dependencies
+black==24.2.0  # Code formatting
+flake8==7.0.0  # Code linting
+pytest==8.0.2  # Testing
+pyinstaller==6.14.1  # For creating standalone executables
+
+# System Dependencies:
+# Ghostscript (gs) is required for PDF compression
+# Download from: https://www.ghostscript.com/releases/gsdnld.html
+# Required files: gswin64c.exe and gsdll64.dll in the 'gs/bin' folder 
