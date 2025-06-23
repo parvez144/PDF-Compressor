@@ -73,7 +73,7 @@ class PDFCompressor:
         self.status_label.pack(pady=5)
         
         # Footer
-        footer_label = tk.Label(self.root, text="© 2025 | Built for Manel by Shahriar", 
+        footer_label = tk.Label(self.root, text="© 2024 | by spk", 
                               bg="#2D2D2D", font=("inter", 8, "italic"), fg="white")
         footer_label.place(relx=1.0, rely=1.0, anchor='se', x=-10, y=-10)
 
