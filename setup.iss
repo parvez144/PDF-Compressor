@@ -1,6 +1,6 @@
 #define MyAppName "PDF Compressor"
 #define MyAppVersion "1.0.0"
-#define MyAppPublisher "Shahriar Parvez"
+#define MyAppPublisher "Shahriar Parvez Khan"
 #define MyAppExeName "PDF_Compressor_Setup.exe"
 
 [Setup]
