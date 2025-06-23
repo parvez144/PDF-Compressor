@@ -27,7 +27,7 @@ A user-friendly desktop application for compressing PDF files while maintaining 
 ## Installation
 
 ### Method 1: Using the Executable (Recommended)
-1. Download the latest release from the [Releases](https://github.com/yourusername/PDF-Compressor/releases) page
+1. Download the latest release from the [Releases](https://github.com/parvez144/PDF-Compressor/releases/tag/v1.0.0) page
 2. Extract the ZIP file
 3. Run `PDF-Compressor.exe`
 
